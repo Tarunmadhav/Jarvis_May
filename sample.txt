@@ -1,0 +1,7 @@
+This is a sample text file for Jarvis to analyze.
+It contains a few lines of simple text.
+The primary purpose is to test the queryFile skill.
+Let's see if Jarvis can summarize this or answer questions.
+For example, what is this file about?
+Or, are there any mentions of bananas? No, there are no bananas here.
+One final line for testing.

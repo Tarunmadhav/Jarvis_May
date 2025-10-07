@@ -1,0 +1,50 @@
+[
+    {
+        "intent_name": "openApp",
+        "regex_pattern": "^(?:jarvis\\s)?(?:please\\s)?(?:open|launch|start)\\s+([\\w\\s.-]+)",
+        "entity_keys": ["appName"],
+        "keywords": ["open app", "launch application", "start this app", "open"]
+    },
+    {
+        "intent_name": "getTime",
+        "regex_pattern": "^(?:jarvis\\s)?(?:.*\\b(time|what time|current time)\\b.*)",
+        "entity_keys": [],
+        "keywords": ["what time is it", "what is the current time", "tell me the time"]
+    },
+    {
+        "intent_name": "searchWeb",
+        "regex_pattern": "^(?:jarvis\\s)?(?:search for|search|find|look up)\\s+(.+)",
+        "entity_keys": ["query"],
+        "keywords": ["search the web for", "find on internet", "look up online", "search", "find"]
+    },
+    {
+        "intent_name": "checkWeather",
+        "regex_pattern": "^(?:jarvis\\s)?(?:.*\\b(weather|forecast)\\b.*)",
+        "entity_keys": [],
+        "keywords": ["how is the weather", "weather forecast today", "is it raining", "weather conditions"]
+    },
+    {
+        "intent_name": "playMedia",
+        "regex_pattern": "^(?:jarvis\\s)?(?:please\\s)?(?:play|stream)\\s+(.+?)\\s+on\\s+([\\w\\s]+)",
+        "entity_keys": ["mediaTitle", "mediaService"],
+        "keywords": ["play on", "stream on", "listen to on"]
+    },
+    {
+        "intent_name": "playMedia",
+        "regex_pattern": "^(?:jarvis\\s)?(?:please\\s)?(?:play|stream)\\s+(.+)",
+        "entity_keys": ["mediaTitle"],
+        "keywords": ["play", "stream", "listen to"]
+    },
+    {
+        "intent_name": "queryFile",
+        "regex_pattern": "^(?:jarvis\\s)?(?:what does|does|tell me what)\\s+(?:the file|file)\\s+([\\w\\s.\\-_/]+?)\\s+(?:say about|is about|about|regarding|concerning)\\s+(.+)",
+        "entity_keys": ["filePath", "queryText"],
+        "keywords": ["what does file say", "file is about", "file about", "file regarding", "file say about"]
+    },
+    {
+        "intent_name": "queryFile",
+        "regex_pattern": "^(?:jarvis\\s)?(?:please\\s)?.*?\\b(?:analyze|summarise|summarize|tell me about|explain)\\b\\s+(?:the file|file)\\s+([\\w\\s.\\-_/]+)",
+        "entity_keys": ["filePath"],
+        "keywords": ["analyze", "summarise", "summarize", "tell me about", "explain"]
+    }
+]
